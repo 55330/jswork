@@ -32,7 +32,8 @@ for(p=0;p<pp;p++    ){for(t=0;t<pp;t++)
     {    n=aaa[p];m=aaa[t];
      
      
-     if(z==n+m  ){document.write( "</br>"+z+"=" +aaa[p] +"+" +aaa[t])}
+     if(z==n+m  ){   
+       document.getElementById('goldbach').innerHTML= ("</br>"+z+"=" +aaa[p] +"+" +aaa[t] ) }
       }  
       }
 
