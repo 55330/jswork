@@ -32,7 +32,7 @@ for(p=0;p<pp;p++    ){for(t=0;t<pp;t++)
     {    n=aaa[p];m=aaa[t];
      
      
-     if(z==n+m  ){    str+=("</br>"+z+"=" +aaa[p] +"+" +aaa[t] );
+     if(z==n+m && n<m ){    str+=("</br>"+z+"=" +aaa[p] +"+" +aaa[t] );
      document.getElementById('goldbach').innerHTML= str;
       }
       }  
