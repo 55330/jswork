@@ -22,3 +22,23 @@ function aa(){
     }
     document.getElementById('monkeyking').innerText=monkey[0]
 }
+///////////////////////////////////////////
+function stat(){let str1=''
+    let str=document.getElementById("str").value
+    let obj={};
+    obj=str.split('').sort().join('').match(/(.)\1+/g).reduce(function(obj,cur)
+    {
+        obj[cur[0]]=cur.length;
+        return obj;
+    },{} );
+
+console.log(obj);
+    
+
+
+
+
+
+
+    document.getElementById('result').innerText=JSON.stringify(obj)
+}
