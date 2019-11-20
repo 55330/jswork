@@ -23,14 +23,10 @@ function aa(){
     document.getElementById('monkeyking').innerText=monkey[0]
 }
 ///////////////////////////////////////////
-function stat(){let str1=''
+function stat(){
     let str=document.getElementById("str").value
     let obj={};
-    obj=str.split('').sort().join('').match(/(.)\1+/g).reduce(function(obj,cur)
-    {
-        obj[cur[0]]=cur.length;
-        return obj;
-    },{} );
+    obj=str.split('').sort().join('').match(/(.)\1+/g).reduce(function(obj,cur){obj[cur[0]]=cur.length;return obj;},{} );
 
 console.log(obj);
     
