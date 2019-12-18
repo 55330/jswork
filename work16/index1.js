@@ -1,7 +1,7 @@
 function animate(obj, option) {
     clearInterval(obj.timer);
-    obj.timer = setInterval(function() {
-        var flag = true;
+    obj.timer = setInterval(function() {var a=1;
+        var flag = true;console.log(a++);
         for (var k in option) {
             var leader = parseInt(getStyle(obj, k)) || 0;
             var target = option[k];
@@ -11,17 +11,14 @@ function animate(obj, option) {
             obj.style[k] = leader + 'px';
             if(leader != target) {
                 flag = false;
-            }
+            } 
         }
         if (flag) {
             clearInterval(obj.timer);
-            obj.onclick = function(){
-                var a= {'left' : 200, 'top' : 500 };
-                a.left=Math.random()*1000;
-                a.top=Math.random()*1000;
-                animate(obj,a);
-          };
+       
         }
+
+
     }, 15);
 }
 function getStyle(obj, attr) {
@@ -35,6 +32,11 @@ var obj = document.getElementById('box');
     // obj.addEventListener('click', function() { 
     //     animate(obj, {'left' : 200, 'top' : 500 });
       //  animate(obj, {'left' : 200, 'top' : 50 });})
-   obj.onclick = function(){
-      animate(obj, {'left' : 200, 'top' : 50 });
-};
+ 
+     
+    obj.onclick = function(){
+        var a= {'left' : 200, 'top' : 500 };
+        a.left= parseInt(Math.random()*1000);
+        a.top= parseInt(Math.random()*1000);
+        animate(obj,a);
+  };
