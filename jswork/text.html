@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<<<<<<< HEAD
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+
+
+</body>
+<script>
+  function f (){
+    this.name="aa";
+    a=function () {
+      console.log(1)
+    }
+  }
+  f.prototype.a=function () {
+    console.log(2)
+  }
+  var q=new f();
+  q.a();
+</script>
+</html>
+=======
+       <meta charset="UTF-8">
+   
+       <title>Document</title>
+       <style>
+          h2{width: 200px; height: 500px;background: chartreuse;}
+       </style>
+</head>
+<body>
+  <h2>sdfdfedfefd</h2>
+  <input type="text" value=""/>
+
+</body>
+
+</html>
+<script >
+  var a=document.getElementsByTagName('h2')[0];
+  var aa=document.getElementsByTagName('input')[0];
+//   a.onclick=function (evt) {
+//      console.log(evt.clientX + '  ' + evt.clientY);
+//   }
+ // a.addEventListener('click',function(evt) { console.log(evt.clientX + '  ' + evt.clientY);})
+  a.addEventListener('click',function (evt){
+     console.log(evt.pageX + '  ' + evt.pageY);
+     console.log(evt.screenX+ '  '+evt.screenY);
+    // console.log(evt.keyCode());
+  })
+  aa.addEventListener('keydown',function(evt){
+    console.log(evt.keyCode);
+  })
+  var text = 1<2 || 1>2 ;
+    console.log(text);
+    console.log(window.event);
+   // a.addEventListener('click', function(evt) { 
+   //    console.log(evt.slientX+ '  ' + evt.slientY);
+   // });
+// var a=document.getElementById('a');
+// console.log(a);
+// var a1=document.getElementsByTagName('body');
+// console.log(a1);
+// var a2=document.getElementsByName('a');
+// console.log(a2);
+// console.log(a2.item(0));
+// var a3=document.getElementById('')
+// var a4=document.getElementsByTagName('')
+// var a5=document.getElementsByName('')
+console.log(window.getComputedStyle('h2', null));
+
+</script>
+>>>>>>> 7202ece8ea725b57a00d5d0437c45430edb61385

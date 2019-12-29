@@ -1,0 +1,30 @@
+{
+  "name": "jswork",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weheggs/jswork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weheggs/jswork/issues"
+  },
+  "homepage": "https://github.com/weheggs/jswork#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+<<<<<<< HEAD
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "nodejs-websocket": "^1.7.2"
+=======
+    "express": "^4.17.1"
+>>>>>>> 7202ece8ea725b57a00d5d0437c45430edb61385
+  },
+  "devDependencies": {},
+  "description": ""
+}

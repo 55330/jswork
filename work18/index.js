@@ -1,4 +1,4 @@
-function send() {
+function send () {
     let sno = document.getElementById('sno').value
     let name = document.getElementById('name').value
     let content = document.getElementById('content').value
@@ -12,7 +12,7 @@ function send() {
     }
 
     //xmlhttp.open('post', 'http://localhost:8080/ajax', true)     //
-    xmlhttp.open('post', 'http://localhost:8080/ajax', true)   //
+    xmlhttp.open('post', 'http://139.9.81.203:8090/ajax', true)   //
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send('sno=' + sno + '&name=' + name +"&content="+content)
 
